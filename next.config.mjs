@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    remotePatterns: [{
+      hostname: 'wdc-icon-generator.s3.amazonaws.com'
+    }]
+  }
+};
 
 export default nextConfig;
